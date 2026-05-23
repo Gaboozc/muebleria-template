@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Variables CSS — tema muebleria Warm Craft Studio
+   ============================================================ */
+:root {
+  --color-walnut:   #6b4c36;   /* CAMBIAR: nogal — acento principal */
+  --color-terra:    #c4704f;   /* CAMBIAR: terracota — acento secundario */
+  --color-sand:     #f7f3ee;   /* CAMBIAR: arena — fondo base */
+  --color-carbon:   #1e1e1e;   /* CAMBIAR: carbon — texto */
+  --color-mist:     #8a7f76;   /* texto secundario */
+  --color-border:   rgba(107,76,54,0.12);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--color-sand);
+  color: var(--color-carbon);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--color-sand); }
+::-webkit-scrollbar-thumb { background: var(--color-walnut); border-radius: 4px; }
+::selection { background: rgba(107,76,54,0.18); color: #1e1e1e; }
+
+/* ============================================================
+   Utilidades de muebleria
+   ============================================================ */
+
+/* Patron de textura de madera muy sutil */
+.pattern-wood {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 60px,
+    rgba(107,76,54,0.025) 60px,
+    rgba(107,76,54,0.025) 61px
+  );
+}
+
+/* Seccion oscura carbon */
+.section-carbon { background: #1e1e1e; color: #f7f3ee; }
+
+/* Seccion crema */
+.section-cream { background: #ede8e1; }
+
+/* Seccion lino */
+.section-linen { background: #faf8f5; }
+
+/* Card de producto — lookbook */
+.product-card {
+  background: #faf8f5;
+  border: 1px solid rgba(107,76,54,0.09);
+  transition: all 0.35s ease;
+}
+.product-card:hover {
+  border-color: rgba(107,76,54,0.22);
+  box-shadow: 0 16px 48px rgba(30,30,30,0.1);
+  transform: translateY(-6px);
+}
+
+/* Badge de categoria */
+.room-badge {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border-radius: 999px;
+}
+
+/* Linea de acento nogal */
+.walnut-line {
+  width: 36px;
+  height: 2px;
+  background: var(--color-walnut);
+}
+
+/* Dimensiones del producto */
+.dim-tag {
+  font-size: 11px;
+  color: var(--color-mist);
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Chip de material */
+.material-chip {
+  background: rgba(107,76,54,0.08);
+  border: 1px solid rgba(107,76,54,0.15);
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-size: 11px;
+  color: var(--color-walnut);
+  font-weight: 500;
+}
