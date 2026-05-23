@@ -325,7 +325,6 @@ export const ContactoPage = () => {
 
 // ── App ───────────────────────────────────────────────────────────────────
 import { Routes, Route, useLocation } from "react-router-dom"
-import { AnimatePresence } from "framer-motion"
 import { Navbar, Footer, WhatsAppButton } from "./components/layout/Layout"
 
 export const App = () => {
