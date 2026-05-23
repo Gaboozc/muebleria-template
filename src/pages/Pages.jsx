@@ -325,7 +325,7 @@ export const ContactoPage = () => {
 
 // ── App ───────────────────────────────────────────────────────────────────
 import { Routes, Route, useLocation } from "react-router-dom"
-import { Navbar, Footer, WhatsAppButton } from "./components/layout/Layout"
+import { Navbar, Footer, WhatsAppButton } from "../components/layout/Layout"
 
 export const App = () => {
   const location = useLocation()
